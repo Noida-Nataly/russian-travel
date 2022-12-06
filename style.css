@@ -182,20 +182,20 @@ padding: 0;
   max-width: 984px;
   padding-left: 48px;
   padding-right: 48px;
-  margin: 92px auto 0;
-  
-
-
-  border: 1px solid red;
+  margin: 0 auto;
 }
 
 .place {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   column-gap: 40px;
   row-gap: 48px;
-  border: 1px solid yellowgreen;
+}
+
+.place: first-child {
+  margin-top: 92px;
 }
 
 .place__title {
