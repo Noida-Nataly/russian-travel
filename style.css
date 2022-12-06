@@ -8,18 +8,17 @@
 .page {
   width: 100%;
   background-color: #2a2c2f;
-  
   font-family: 'Inter', Arial, sans-serif;
   color: white;
 }
 
 .header {
-  margin: 0 auto;
-  width: calc(100% - 2 * 48px);
-  max-width: 1184px;
+  margin: auto;
+  max-width: 1280px;
+  min-width: 320px;
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
+  padding: 28px 48px 0 48px;
   box-sizing: border-box;
 }
 
@@ -33,16 +32,14 @@
   list-style-type: none;
   height: 28px;
   gap: 18px;
-  margin: 20px 0 0;
-  padding: 0;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .header__lang-link {
   width: 29px;
   color: white;
   text-decoration-line: none;
-  text-align: right;
-
   font-weight: 400;
   font-size: 1.5em;
   font-style: normal;
@@ -60,18 +57,28 @@
   text-decoration-line: underline;
 }
 
-.lead {
-  width: calc(100% - 2 * 148px);
+/*.content {
   max-width: 984px;
-  height: 1005px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 0 auto;
+}*/
+
+.lead__figure {
+  margin: 0;
+}
+
+.lead {
+  max-width: 984px;
   margin: 56px auto 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .lead__title {
   margin: 0 auto;
   max-width: 720px;
   height: 200px;
-  
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -82,29 +89,28 @@
 }
 
 .lead__subtitle {
-  height: 72px;
+  width: 640px;
   margin: 32px auto 64px auto;
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.2;
-  text-align: center;
-  max-width: 640px;
+  text-align: center;  
 }
 
 .lead__image {
   display: block;
   width: 100%;
   max-width: 984px;
-  height: 615px;
 }
 
 .lead__caption {
-  width: 158px;
+  width: 984px;
   height: 14px;
   margin-top: 8px;
-  margin-bottom: 0;
+  text-align: left;
+  /*margin-bottom: 0;*/
   
   font-family: 'Inter';
   font-style: normal;
@@ -115,14 +121,14 @@
 }
 
 .intro {
-
-  margin-top: 92px;
-  margin-left: 148px;
+  padding: 0 48px 0 48px;
+  max-width: 984px;
+  margin: 92px auto;
 }
 
 
 .intro__title {
-  
+  max-width: 690px;
   font-family: 'Inter';
   font-size: 54px;
   font-weight: 900;
@@ -133,15 +139,15 @@
 }
 
 .intro__text {
+  max-width: 690px;
   margin-top: 40px;
-  width: 690px;
-
+  text-align: left;
   font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: left;
+  
 }
 
 .intro__list {
@@ -156,15 +162,96 @@ padding: 0;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .photo-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-row-gap: 16px;
-column-gap: 16px;
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  /*row-gap: 16px;
+  column-gap: 16px;*/
+  gap: 16px;
+  margin: 0 auto;
 }
-.photo-grid__item {
 
+.photo-grid__item {
+  width: 100%;
+}
+
+.places {
+  max-width: 984px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 92px auto 0;
+  
+
+
+  border: 1px solid red;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 40px;
+  row-gap: 48px;
+  border: 1px solid yellowgreen;
+}
+
+.place__title {
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+.place__image {
+  width: 100%;
+ 
+}
+
+.place__website {
+  
+  align-self: flex-end;
+
+}
+
+.place__website-link {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.place__website-url {
+  margin: 0;
+  padding-bottom: 12px;
+  color: #AAAAAA;
+  letter-spacing: 2px;
+  text-decoration-line: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  
+}
+
+.place__paragraph {
+  margin: 0;
+  padding-bottom: 26px;
+  grid-column: 2;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
+
+.place__paragraph:last-child {
+  padding-bottom: 0;
 }
