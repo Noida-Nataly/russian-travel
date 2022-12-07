@@ -167,9 +167,7 @@ padding: 0;
 .photo-grid {
   max-width: 1184px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-  /*row-gap: 16px;
-  column-gap: 16px;*/
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
   gap: 16px;
   margin: 0 auto;
 }
@@ -188,7 +186,8 @@ padding: 0;
 .place {
   margin-top: 80px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+  /*  grid-template-columns: repeat(2, 1fr); */
   grid-template-rows: auto;
   column-gap: 40px;
   row-gap: 48px;
