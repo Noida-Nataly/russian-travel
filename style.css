@@ -58,11 +58,6 @@
   line-height: 28px;
 }
 
-.header__lang-link:hover {
-  font-size: 24px;
-  transition: font=size 0.2s linear;
-}
-
  /*для экранов менее 320*/
 @media screen and (max-width: 320px) {
   .header__lang-link {
@@ -241,12 +236,17 @@ padding: 0;
 }
 
 .place__website-link {
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__website-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.3 linear;
 }
 
 .place__website-url {
@@ -292,6 +292,11 @@ padding: 0;
   position: relative;
   color: white;
   text-decoration: none;
+}
+
+.cover__overlay:hover {
+  background-color: rgba(42, 44, 47, 0.8);
+  transition: opacity 0.3 linear;
 }
 
 .cover__background {
@@ -367,6 +372,12 @@ padding: 0;
   font-size: 16px;
   line-height: 18px;
 }
+
+.footer__link:hover {
+  opacity: 0.8;
+  transition: opacity 0.3 linear;
+}
+
 
  .footer__copyright {
   margin: 0;
