@@ -58,8 +58,8 @@
   line-height: 28px;
 }
 
- /*для экранов менее 320*/
-@media screen and (max-width: 320px) {
+ /*для экранов менее 400*/
+@media screen and (max-width: 400px) {
   .header__lang-link {
     width: 29px;
     font-size: 18px;
@@ -135,12 +135,9 @@
 }
 
 .lead__caption {
-  /*width: 984px;*/
   height: 14px;
   margin-top: 8px;
   text-align: left;
-  /*margin-bottom: 0;*/
-  
   font-family: 'Inter';
   font-style: normal;
   letter-spacing: 1.5px;
@@ -149,13 +146,24 @@
   line-height: 14px;
 }
 
+@media screen and (max-width: 768px) {
+  .lead__caption {
+    margin-left: 24px;
+  }
+}
+
 .intro {
   padding: 0 48px 0 48px;
   max-width: 984px;
   margin: 92px auto;
 }
 
-
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-left: 24px;
+    margin: 88px auto;
+  }
+}
 
 .intro__title {
   max-width: 690px;
@@ -218,6 +226,13 @@ margin-top: 33px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    max-width: 720px;
+    gap: 16px;
+    padding: 0 24px;
+  }
+}
 
 .photo-grid__item {
   width: 100%;
@@ -236,6 +251,14 @@ margin-top: 33px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .place {
   margin-top: 80px;
   display: grid;
@@ -248,13 +271,28 @@ margin-top: 33px;
 
 @media screen and (max-width: 1024px) {
   .place {
+    /*grid-template-columns: repeat(auto-fill, minmax(320px, 440px));*/
     margin-top: 72px;
     column-gap: 32px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    column-gap: 28px;
+  }
+}
+
+
 .place:first-child {
   margin-top: 92px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place:first-child {
+    margin-top: 88px;
+  }
 }
 
 .place__title {
@@ -266,11 +304,23 @@ margin-top: 33px;
   line-height: 76px;
 }
 
+@media screen and (max-width: 768px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    max-width: 330px;
+  }
+}
+
 .place__image {
   max-width: 460px;
   width: 100%;
-  height: 100%;
- 
+}
+
+@media screen and (max-width: 768px) {
+  .place__image {
+    max-width: 340px;
+  }
 }
 
 .place__website {
@@ -315,11 +365,19 @@ margin-top: 33px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 1.63;
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
 }
 
 .place__paragraph:last-child {
   padding-bottom: 0;
+
 }
 
 
@@ -398,10 +456,18 @@ margin-top: 33px;
 
 .footer {
   max-width: calc(100% - 2 * 48px);
-  margin: 84px auto 0 auto;
+  margin: 92px auto 0 auto;
   padding: 0 16px 20px 16px;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    max-width: calc(100% - 2 * 24px);
+    margin: 88px auto 0 auto;
+    padding: 0 24px 20px 24px;
+  }
 }
 
 .footer__links{
