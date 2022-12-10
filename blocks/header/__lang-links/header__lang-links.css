@@ -1,0 +1,15 @@
+.header__lang-links {
+  display: flex;
+  list-style-type: none;
+  gap: 18px;
+  margin: 0;
+  padding: 20px 0 0 52px;
+}
+
+/* для экранов с разрешением менее 400px*/
+
+@media screen and (max-width: 400px) {
+  .header__lang-links {
+    padding-top: 15px;
+  }
+}

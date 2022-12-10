@@ -1,0 +1,27 @@
+.lead__caption {
+  height: 14px;
+  margin-top: 8px;
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/*для экранов с разрешением менее 768px*/
+
+@media screen and (max-width: 768px) {
+  .lead__caption {
+    margin-left: 24px;
+  }
+}
+
+/*для экранов с разрешением менее 400px*/
+
+@media screen and (max-width: 400px) {
+  .lead__caption {
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+.place__website {
+  align-self: flex-end;
+}
+
+/* для экранов с разрешением менее 400px */
+
+@media screen and (max-width: 400px) {
+  .place__website {
+    margin-left: 16px;
+  }
+}

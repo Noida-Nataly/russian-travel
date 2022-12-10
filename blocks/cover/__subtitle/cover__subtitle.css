@@ -1,0 +1,21 @@
+.cover__subtitle {
+  margin: 32px auto 0 auto;
+  max-width: 360px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* для экранов с разрешением менее 400px */
+
+@media screen and (max-width: 400px) {
+  .cover__subtitle {
+    max-width: 288px;
+    margin: 16px 16px 0 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
