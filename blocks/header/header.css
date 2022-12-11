@@ -6,6 +6,12 @@
   padding: 28px 16px 0 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 928px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     max-width: 728px;
