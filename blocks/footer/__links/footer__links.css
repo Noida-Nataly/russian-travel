@@ -6,7 +6,8 @@
   gap: 18px;
   list-style-type: none;
   color: white;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* для экранов с разрешением менее 400px */

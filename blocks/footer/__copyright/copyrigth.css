@@ -1,11 +1,21 @@
 .footer__copyright {
   margin: 0;
-  font-family: 'Inter';
+  font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
+
+
+/* для экранов с разрешением менее 728px */
+
+@media screen and (max-width: 728px) {
+  .footer__copyright {
+    margin-top: 18px;
+  }
+}
+
 
 /* для экранов с разрешением менее 400px */
 
