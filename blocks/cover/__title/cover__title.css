@@ -10,15 +10,16 @@
    
 }
 
-/*для экранов с разрешением менее 400px */
+/*для экранов с разрешением менее 500px */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .cover__title {
     max-width: 288px;
-    margin: 33px 16px 0 16px;
+    margin: 33px auto 0 auto;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 32px;
     line-height: 35px;
+    
   }
 }

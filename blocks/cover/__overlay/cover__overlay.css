@@ -12,9 +12,10 @@
 
 /* для экранов с разрешением менее 400px */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .cover__overlay {
     display: block;
+    
   }
 }
 
