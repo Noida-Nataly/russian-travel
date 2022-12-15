@@ -1,5 +1,5 @@
 .footer__link{
-  color: white;
+  color: #FFF;
   text-decoration: none;
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
@@ -10,7 +10,7 @@
 
 .footer__link:hover {
   opacity: 0.8;
-  transition: opacity 0.3 linear;
+  transition: opacity 0.3s linear;
 }
 
 /* для экранов с разрешением менее 400px */

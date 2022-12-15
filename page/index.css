@@ -2,12 +2,9 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/font/inter.css);
 
-
 /* page */
 
 @import url(../blocks/page/page.css);
-
-
 
 /* header */
 
@@ -57,14 +54,11 @@
 @import url(../blocks/cover/__title/cover__title.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);
 @import url(../blocks/cover/__link/cover__link.css);
-@import url(../blocks/cover/__overlay/cover__overlay.css);
-@import url(../blocks/cover/__background/cover__background.css);
 
 /* footer */
 
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/);
-@import url(../blocks/footer/__copyright/copyrigth.css);
+@import url(../blocks/footer/__copyright/copyright.css);
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 

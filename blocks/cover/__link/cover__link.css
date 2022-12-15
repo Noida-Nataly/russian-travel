@@ -1,6 +1,10 @@
 .cover__link {
-  display: block;
-  position: relative;
-  color: white;
+  display: flex;
+  width: 100%;
+  min-height: min(740px, calc(100vw * 740 / 1184));
   text-decoration: none;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: #FFF;
 }
