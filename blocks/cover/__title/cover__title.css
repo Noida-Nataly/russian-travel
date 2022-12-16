@@ -7,7 +7,6 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-   
 }
 
 /*для экранов с разрешением менее 500px */
@@ -20,6 +19,5 @@
     padding-right: 24px;
     font-size: 32px;
     line-height: 35px;
-    
   }
 }
